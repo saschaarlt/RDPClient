@@ -9,7 +9,7 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("ConsoleApp1")>
-<Assembly: AssemblyDescription("DEMO Template App for new projects")>
+<Assembly: AssemblyDescription("DEMO App for basement_devs RDP Client")>
 <Assembly: AssemblyCompany("CM Systemhaus GmbH")>
 <Assembly: AssemblyProduct("ConsoleApp1")>
 <Assembly: AssemblyCopyright("Copyright ©  2021")>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("1.0.21164.1")>
-<Assembly: AssemblyFileVersion("1.0.21164.1")>
+<Assembly: AssemblyVersion("1.0.21164.13")>
+<Assembly: AssemblyFileVersion("1.0.21164.13")>

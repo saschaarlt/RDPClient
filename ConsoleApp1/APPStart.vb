@@ -18,6 +18,8 @@ Public Class APPStart
 
 #Region "VARs"
 
+    Dim myMain As Main
+
     'Public VARs for direct Access (Fields):
 
     'Private VARs (Access only via Properties):
@@ -27,7 +29,7 @@ Public Class APPStart
 #Region "Constructors"
 
     Public Sub New(ByRef objMain As Main)
-        'SiAuto.Main.LogSeparator()
+        myMain = objMain
     End Sub
 
 #End Region
@@ -48,8 +50,8 @@ Public Class APPStart
                     Case "test"
                         'myMain.Stage = Main.StageType.TEST
 
-                    Case "PasswordProtected".ToLower
-                        Dim myTest As New Password_Tests()
+                    Case "rdpconnect1".ToLower
+                        'Dim myTest As New Password_Tests()
                         'myTest.checkWord_Test()
 
                     Case "satest"
@@ -69,22 +71,19 @@ Public Class APPStart
 
             '### PART 2 ###'
 
+            Dim myRDPClient1 As New ALECS_RDP(mymain)
 
-            'Select Case myMain.AppType
+            '# also see Unit Tests for login data
 
-            '    Case Main.ApplicationType.Console
-            '        myMain.Log.add(My.Application.Info.ProductName & " " & My.Application.Info.Version.ToString & " is running as CONSOLE !!!", Me, Level.Message, Color.GreenYellow)
+            Dim netCred As New Net.NetworkCredential()
+            With netCred
+                .UserName = "juergen.flock@acquisio.de"
+                .Password = "o+I<Wr[n0{zheO3"
+            End With
 
-            '        'System.Windows.Forms.Application.Run(New frmMain(myMain))
-            '        System.Windows.Forms.Application.Run(New frmALECSJobs(myMain))
+            Dim strConFile As String = myMain.AppPath.ToString.Replace("bin\Debug\", "connections\") & "cpub-TSFARMDEV-CmsRdsh.rdp"
 
-
-            '    Case Main.ApplicationType.Service
-            '        myMain.Log.add(myMain.ProductName() & " " & myMain.ProductVersion.ToString & " is running as SERVICE MODE !!!", Me, Level.Message, Color.GreenYellow)
-
-            '        System.Windows.Forms.Application.Run(New frmALECSJobs(myMain))
-
-            'End Select
+            myRDPClient1.LogIn(netCred, strConFile)
 
 
 

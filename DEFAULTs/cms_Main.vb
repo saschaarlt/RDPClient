@@ -178,6 +178,12 @@ Public Class Main
         Try
             CTN = New Threading.CancellationToken
 
+            SiAuto.Main.EnterMethod(Level.Debug, "start Initializing cms_HELPER --->")
+            HELPER = New cms_Helper(Me)
+            SiAuto.Main.LeaveMethod(Level.Debug, "finished Initializing cms_HELPER <---")
+
+            Log = New ALECS_LOG(Me)
+
             Dim silConnectionsBuilder As New ConnectionsBuilder
 
             '# the Defaults: LEVEL

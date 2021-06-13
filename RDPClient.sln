@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.vbproj", "{3333A3C8-8920-4EBB-967F-5B28BF86D573}"
-EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WindowsApp1", "WindowsApp1\WindowsApp1.vbproj", "{13F5F446-5B4C-48FF-BD6B-C2D13E85D13E}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RDPClient", "ConsoleApp1\RDPClient.vbproj", "{3333A3C8-8920-4EBB-967F-5B28BF86D573}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		{3333A3C8-8920-4EBB-967F-5B28BF86D573}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3333A3C8-8920-4EBB-967F-5B28BF86D573}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3333A3C8-8920-4EBB-967F-5B28BF86D573}.Release|Any CPU.Build.0 = Release|Any CPU
-		{13F5F446-5B4C-48FF-BD6B-C2D13E85D13E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{13F5F446-5B4C-48FF-BD6B-C2D13E85D13E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{13F5F446-5B4C-48FF-BD6B-C2D13E85D13E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{13F5F446-5B4C-48FF-BD6B-C2D13E85D13E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
