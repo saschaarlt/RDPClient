@@ -39,3 +39,5 @@ Finished:
 2. by a Developer of us, which investigate the code and my reconsider some code or extend the UnitTests
 3. When all UnitTests and actions are successful happened
 Please offer 1. your price, 2. delivery date (days) and 3. skill (if not in your profile), independent from our budget. Please inform us if you’re doing something like this before and / or have special knowledge about rdp.
+
+add a line for test.
